@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fitness Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Fitness Pro</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#programs">Programs</a>
+        <a href="#bmi">BMI Calculator</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Transform Your Body Today</h2>
+    <p>Join our fitness programs and stay healthy</p>
+    <button onclick="scrollToPrograms()">Get Started</button>
+</section>
+
+<section id="programs" class="programs">
+    <h2>Our Programs</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>Weight Loss</h3>
+            <p>Burn fat with guided workouts.</p>
+        </div>
+        <div class="card">
+            <h3>Muscle Building</h3>
+            <p>Strength training for muscle growth.</p>
+        </div>
+        <div class="card">
+            <h3>Yoga</h3>
+            <p>Improve flexibility and peace of mind.</p>
+        </div>
+    </div>
+</section>
+
+<section id="bmi" class="bmi-section">
+    <h2>BMI Calculator</h2>
+    <input type="number" id="height" placeholder="Height (cm)">
+    <input type="number" id="weight" placeholder="Weight (kg)">
+    <button onclick="calculateBMI()">Calculate</button>
+    <h3 id="result"></h3>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Fitness Pro. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
